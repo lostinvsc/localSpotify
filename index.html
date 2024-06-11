@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My_media_player</title>
+    <link rel="shortcut icon" href="https://open.spotify.com/favicon.ico " type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+
+
+        <div class="left">
+            <div class="up">
+
+                <ul>
+                    <li class="home">
+                        <img src="home.svg" >
+                        Home
+                    </li>
+
+                    <li class="search">
+                        <img src="search.svg" >
+                        Search
+                    </li>
+                </ul>
+
+            </div>
+            <div class="down">
+
+                <li> <img src="lib.svg" alt=""> <span>Playlist </span></li>
+
+
+                <div class="playlist">
+                    <div class="song" onclick="main()">
+                        <div class="front">
+                            <img src="music-1005-svgrepo-com.svg" alt="">
+                            <div class="name">
+                                <li>song name</li>
+                                <div>
+                                    ...
+                                </div>
+                            </div>
+                        </div>
+                        <div class="playnow">
+                            <span>Play Now</span>
+
+                            <img src="play-circle-svgrepo-com.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="right">
+
+            <div class="nav">
+                Listen the quality music, For FREE !!
+            </div>
+            <div class="text">Album:-</div>
+
+             <div class="songs">
+
+                <div class="card">
+                    <img src="https://i.scdn.co/image/ab6761610000101f8ae7f2aaa9817a704a87ea36" alt="">
+                    <h3>Hot hits Punjabi</h3>
+                    <p>Catch the hottest punjabi track with spotify</p>
+                    <img src="play-button-svgrepo-com.svg" class="playbtn" alt="">
+                </div>
+
+            </div>
+
+
+
+            
+
+        </div>
+
+
+    </main>
+
+    <footer>
+        <div class="img">
+            <div class="songtitle">
+
+            </div>
+
+            <img src="backward-step-svgrepo-com.svg" class="back" alt="">
+            <img src="playbtnforfoot.svg" class="mid" onclick="play()" alt="">
+            <img src="forward-step-svgrepo-com.svg" class="front " id="front" alt="">
+
+            <div class="volume">
+                <input type="range" id="volumebar">
+                <div class="fortime">
+                    <div class="time"></div>
+                    /
+                    <div class="duration"></div>
+                </div>
+            </div>
+        </div>
+
+        <input type="range" id="seekbar" value="0" max="100">
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
